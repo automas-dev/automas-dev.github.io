@@ -1,0 +1,69 @@
+name: Publish Pages
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  build:
+    name: Build Site
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: automas-dev/reusable-workflows/setup_python@main
+        with:
+          python-version: "3.12"
+          poetry-version: "1.8.5"
+
+      - name: Install Dependencies
+        run: poetry install
+
+      - name: Build
+        run: poetry run mkdocs build
+
+      - name: Upload site files
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+  increment_version:
+    name: Increment Version
+    uses: automas-dev/reusable-workflows/.github/workflows/increment_version.yml@main
+    if: github.ref == 'refs/heads/main'
+    secrets: inherit
+
+    needs: build
+
+    permissions:
+      contents: write
+
+  deploy:
+    name: Deploy Site
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy Site to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
