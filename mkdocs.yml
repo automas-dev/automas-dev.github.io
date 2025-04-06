@@ -1,31 +1,37 @@
 site_name: Automas Dev
+site_url: https://automas-dev.github.io
+repo_url: https://github.com/automas-dev/automas-dev.github.io
+repo_name: automas-dev.github.io
+
 # nav:
 #   - Home: README.md
 
 theme:
   name: material
+
   icon:
     logo: fontawesome/solid/a
+    repo: fontawesome/brands/github
+
   features:
-    - content.tabs.link
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.tabs
-    # - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
-    - navigation.path
-    - navigation.prune
-    - navigation.indexes
-    # - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    # - header.autohide
-    - navigation.footer
+    - content.code.annotate
     - content.code.copy
     - content.code.select
-    - content.code.annotate
+    - content.tabs.link
+    # - header.autohide
+    - navigation.expand
+    # - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
 
   palette:
     - media: "(prefers-color-scheme)"
@@ -46,19 +52,29 @@ theme:
         name: Switch to system preference
 
 plugins:
+  - blog
   - search
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
+  - def_list
+  - footnotes
+  - tables
+  - pymdownx.caret # enable underline
   - pymdownx.tilde # enable strikethrough
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
-  - toc:
-      permalink: true
   - pymdownx.highlight:
       anchor_linenums: false
       line_spans: __span
       pygments_lang_class: true
-  - def_list
+  - pymdownx.inlinehilite
+  # - pymdownx.snippets  # !!! NOT FOR USER FACING SITE
+  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+  - toc:
+      permalink: true
