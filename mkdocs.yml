@@ -1,7 +1,7 @@
 site_name: Automas Dev
-site_url: https://automas-dev.github.io
-repo_url: https://github.com/automas-dev/automas-dev.github.io
-repo_name: automas-dev.github.io
+site_url: https://automas.dev
+# repo_url: https://github.com/automas-dev/automas-dev.github.io
+# repo_name: automas-dev.github.io
 
 # nav:
 #   - Home: README.md
@@ -9,9 +9,11 @@ repo_name: automas-dev.github.io
 theme:
   name: material
 
-  icon:
-    logo: fontawesome/solid/a
-    repo: fontawesome/brands/github
+  logo: static/logo.png
+  favicon: static/favicon.ico
+
+  # icon:
+  #   repo: fontawesome/brands/github
 
   features:
     - content.code.annotate
@@ -40,16 +42,19 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: green
+      primary: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: green
+      primary: custom
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
+extra_css:
+  - static/colors.css
 
 plugins:
   - blog
@@ -78,3 +83,6 @@ markdown_extensions:
       custom_checkbox: true
   - toc:
       permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
