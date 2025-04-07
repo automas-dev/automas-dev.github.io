@@ -1,4 +1,4 @@
-# Automas Dev
+# Home
 
 The larger documentation site of automas-dev projects.
 
