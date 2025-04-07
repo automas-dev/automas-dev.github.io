@@ -1,0 +1,9 @@
+This favicon was generated using the following font:
+
+- Font Title: Anton
+- Font Author: undefined
+- Font Source: https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm0K08i4gS7lu.ttf
+- Font License: undefined)
+
+- Color: #88CC00
+- Font Color: #FFFFFF
