@@ -15,7 +15,7 @@ The larger documentation site of automas-dev projects.
     __ASM__ Boot Loader
 
     __C__ / __ASM__ Kernel
-    
+
     __C++__ Tests
 
     [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/os/)
@@ -36,27 +36,69 @@ The larger documentation site of automas-dev projects.
 
     [![ci](https://github.com/automas-dev/codepic/actions/workflows/ci.yml/badge.svg){.middle}](https://github.com/automas-dev/codepic/actions/workflows/ci.yml)
 
+-   :octicons-repo-16:{.lg .middle} __Reusable Workflows__
+
+    ---
+
+    Reusable github workflows.
+
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/reusable-workflows/)
+
 -   [:octicons-repo-16:{.lg .middle} __GLPP__](project_showcase/glpp.md)
 
     ---
 
     Helper Classes that wrap OpenGL functionality
 
+    __C++__
+
     [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/glpp/)
-
--   :octicons-repo-16:{.lg .middle} __Reusable Workflows__
-
--   :octicons-repo-16:{.lg .middle} __Singe__
-
--   :octicons-repo-16:{.lg .middle} __Wavefront__
-
--   :octicons-repo-16:{.lg .middle} __Swerve__
 
 -   :octicons-repo-16:{.lg .middle} __cc-libs__
 
+    ---
+
+    Lua library to support programming and operation of ComputerCraft computers and turtles
+
+    :simple-lua:{.lg .middle} Lua
+
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/swerve/)
+
+-   :octicons-repo-16:{.lg .middle} __Singe__
+
+    ---
+
+    Scene In Nodes Game Engine
+
+    __C++__
+
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/singe/)
+
+-   :octicons-repo-16:{.lg .middle} __Wavefront__
+
+    ---
+
+    A Wavefront OBJ and MTL Parser
+
+    __C++__
+
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/wavefront/)
+
+-   :octicons-repo-16:{.lg .middle} __Swerve__
+
+    ---
+
+    Simulations of swerve (motorized caster) wheels
+
+    __C++__
+
+    __Webots__
+
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/swerve/)
+
 </div>
 
-<!-- 
+<!--
 ### TODO
 
 #### Extras
