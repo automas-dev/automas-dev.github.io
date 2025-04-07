@@ -1,17 +1,82 @@
-# Welcome to MkDocs
+# Automas Dev
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The larger documentation site of automas-dev projects.
 
-## Commands
+## Featured Projects
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+<div class="grid cards" markdown>
 
-## Project layout
+-   [:octicons-repo-16:{.lg .middle} __i386 OS__](project_showcase/os.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    ---
+
+    Hobby i386 Operating System
+
+    __ASM__ Boot Loader
+
+    __C__ / __ASM__ Kernel
+    
+    __C++__ Tests
+
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/os/)
+
+    [![CI Tests](https://github.com/automas-dev/os/actions/workflows/ci.yml/badge.svg){.middle}](https://github.com/automas-dev/os/actions/workflows/ci.yml)
+
+-   [:octicons-repo-16:{.lg .middle} __Code Pic__](project_showcase/codepic.md)
+
+    ---
+
+    Hobby i386 Operating System
+
+    :simple-python: Python
+
+    [:simple-python: PyPi](https://pypi.org/project/codepic/)
+
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/codepic/)
+
+    [![ci](https://github.com/automas-dev/codepic/actions/workflows/ci.yml/badge.svg){.middle}](https://github.com/automas-dev/codepic/actions/workflows/ci.yml)
+
+-   [:octicons-repo-16:{.lg .middle} __GLPP__](project_showcase/glpp.md)
+
+    ---
+
+    Helper Classes that wrap OpenGL functionality
+
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/glpp/)
+
+-   :octicons-repo-16:{.lg .middle} __Reusable Workflows__
+
+-   :octicons-repo-16:{.lg .middle} __Singe__
+
+-   :octicons-repo-16:{.lg .middle} __Wavefront__
+
+-   :octicons-repo-16:{.lg .middle} __Swerve__
+
+-   :octicons-repo-16:{.lg .middle} __cc-libs__
+
+</div>
+
+<!-- 
+### TODO
+
+#### Extras
+
+- vector py
+- quickbake
+- fridge
+- dispatch queue
+- vim-scarpet
+
+#### ???
+
+- plot?
+- word search?
+- ios ui stuff?
+- forth?
+
+#### Private
+
+- resume
+- souprfood
+- hinj
+-->
