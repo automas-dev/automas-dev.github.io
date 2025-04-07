@@ -5,6 +5,13 @@ site_url: https://automas.dev
 
 # nav:
 #   - Home: README.md
+#   - GitHub: https://github.com/automas-dev/
+
+validation:
+  omitted_files: warn
+  absolute_links: warn # Or 'relative_to_docs' - new in MkDocs 1.6
+  unrecognized_links: warn
+  anchors: warn # New in MkDocs 1.6
 
 theme:
   name: material
@@ -61,12 +68,14 @@ plugins:
   - search
 
 markdown_extensions:
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - def_list
   - footnotes
   - tables
+  - md_in_html
   - pymdownx.caret # enable underline
   - pymdownx.tilde # enable strikethrough
   - pymdownx.keys

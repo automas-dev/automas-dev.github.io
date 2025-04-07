@@ -1,5 +1,7 @@
 # Hobby i386 Operating System
 
+Hobby i386 Operating System
+
 :octicons-mark-github-16: [https://github.com/automas-dev/os/](https://github.com/automas-dev/os/)
 
 ## Project Features
