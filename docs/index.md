@@ -10,7 +10,7 @@ The larger documentation site of automas-dev projects.
 
     ---
 
-    Hobby i386 Operating System
+    Hobby i386 Operating System.
 
     __ASM__ Boot Loader
 
@@ -26,7 +26,7 @@ The larger documentation site of automas-dev projects.
 
     ---
 
-    Hobby i386 Operating System
+    Capture code in a picture.
 
     :simple-python: Python
 
@@ -64,6 +64,8 @@ The larger documentation site of automas-dev projects.
 
     [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/swerve/)
 
+    [![ci](https://github.com/automas-dev/cc-libs/actions/workflows/ci.yaml/badge.svg)](https://github.com/automas-dev/cc-libs/actions/workflows/ci.yaml)
+
 -   :octicons-repo-16:{.lg .middle} __Singe__
 
     ---
@@ -95,6 +97,8 @@ The larger documentation site of automas-dev projects.
     __Webots__
 
     [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/swerve/)
+
+    [![CI Tests](https://github.com/automas-dev/swerve/actions/workflows/ci.yml/badge.svg)](https://github.com/automas-dev/swerve/actions/workflows/ci.yml)
 
 </div>
 
