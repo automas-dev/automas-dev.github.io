@@ -10,7 +10,7 @@ The larger documentation site of automas-dev projects.
 
     ---
 
-    Hobby i386 Operating System
+    Hobby i386 Operating System.
 
     __ASM__ Boot Loader
 
@@ -26,7 +26,7 @@ The larger documentation site of automas-dev projects.
 
     ---
 
-    Hobby i386 Operating System
+    Capture code in a picture.
 
     :simple-python: Python
 

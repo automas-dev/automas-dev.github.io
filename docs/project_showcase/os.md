@@ -1,8 +1,10 @@
 # Hobby i386 Operating System
 
-Hobby i386 Operating System
+Hobby i386 Operating System.
 
-:octicons-mark-github-16: [https://github.com/automas-dev/os/](https://github.com/automas-dev/os/)
+[:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/os/)
+
+[![CI Tests](https://github.com/automas-dev/os/actions/workflows/ci.yml/badge.svg){.middle}](https://github.com/automas-dev/os/actions/workflows/ci.yml)
 
 ## Project Features
 
