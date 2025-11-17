@@ -19,11 +19,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: automas-dev/reusable-workflows/setup_python@main
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-          poetry-version: "1.8.5"
+          cache: "poetry"
+
+      # - name: Setup Python
+      #   uses: automas-dev/reusable-workflows/setup_python@main
+      #   with:
+      #     python-version: "3.12"
+      #     poetry-version: "1.8.5"
 
       - name: Install Dependencies
         run: poetry install
