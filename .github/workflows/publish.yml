@@ -19,17 +19,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: automas-dev/reusable-workflows/setup_python@main
+      - name: Install Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-          poetry-version: "1.8.5"
+          python-version-file: .python-version
+
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v7
 
       - name: Install Dependencies
-        run: poetry install
+        run: uv sync --frozen
 
       - name: Build
-        run: poetry run mkdocs build
+        run: uv run --frozen mkdocs build
 
       - name: Upload site files
         id: deployment
