@@ -4,9 +4,9 @@ repo_url: https://github.com/automas-dev/automas-dev.github.io
 repo_name: automas-dev.github.io
 edit_uri: edit/main/docs/
 
-# nav:
-#   - Home: README.md
-#   - GitHub: https://github.com/automas-dev/
+nav:
+  - Home: index.md
+  - Blog: blog/index.md
 
 validation:
   omitted_files: warn

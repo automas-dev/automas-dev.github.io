@@ -1,12 +1,13 @@
 # Home
 
-The larger documentation site of automas-dev projects.
+The larger documentation site of
+[automas-dev](https://github.com/automas-dev?tab=repositories) projects.
 
 ## Featured Projects
 
 <div class="grid cards" markdown>
 
--   [:octicons-repo-16:{.lg .middle} __i386 OS__](project_showcase/os.md)
+-   :octicons-repo-16:{.lg .middle} __i386 OS__
 
     ---
 
@@ -22,7 +23,7 @@ The larger documentation site of automas-dev projects.
 
     [![CI Tests](https://github.com/automas-dev/os/actions/workflows/ci.yml/badge.svg){.middle}](https://github.com/automas-dev/os/actions/workflows/ci.yml)
 
--   [:octicons-repo-16:{.lg .middle} __Code Pic__](project_showcase/codepic.md)
+-   :octicons-repo-16:{.lg .middle} __Code Pic__
 
     ---
 
@@ -44,7 +45,7 @@ The larger documentation site of automas-dev projects.
 
     [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/reusable-workflows/)
 
--   [:octicons-repo-16:{.lg .middle} __GLPP__](project_showcase/glpp.md)
+-   :octicons-repo-16:{.lg .middle} __GLPP__
 
     ---
 
@@ -62,7 +63,7 @@ The larger documentation site of automas-dev projects.
 
     :simple-lua:{.lg .middle} Lua
 
-    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/swerve/)
+    [:octicons-mark-github-16: GitHub Repo](https://github.com/automas-dev/cc-libs/)
 
     [![ci](https://github.com/automas-dev/cc-libs/actions/workflows/ci.yaml/badge.svg)](https://github.com/automas-dev/cc-libs/actions/workflows/ci.yaml)
 
