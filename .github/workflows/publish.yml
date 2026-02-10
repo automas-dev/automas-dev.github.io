@@ -39,10 +39,34 @@ jobs:
         with:
           path: site/
 
+  create_release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'NO RELEASE')
+
+    needs: build
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Increment Version
+        uses: automas-dev/reusable-workflows/increment_version@main
+        id: version
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1.14.0
+        with:
+          makeLatest: true
+          generateReleaseNotes: true
+          tag: ${{ steps.version.outputs.version }}
+
   deploy:
     name: Deploy Site
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'NO RELEASE')
+    if: github.ref == 'refs/heads/main'
 
     needs: build
 
@@ -55,19 +79,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - uses: actions/checkout@v4
-
       - name: Deploy Site to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Increment Version
-        uses: automas-dev/reusable-workflows/increment_version@main
-        id: version
-
-      - name: Create Release
-        uses: ncipollo/release-action@v1.14.0
-        with:
-          makeLatest: true
-          generateReleaseNotes: true
-          tag: ${{ steps.version.outputs.version }}
