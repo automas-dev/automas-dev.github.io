@@ -1,7 +1,8 @@
 site_name: Automas Dev
 site_url: https://automas.dev
-# repo_url: https://github.com/automas-dev/automas-dev.github.io
-# repo_name: automas-dev.github.io
+repo_url: https://github.com/automas-dev/automas-dev.github.io
+repo_name: automas-dev.github.io
+edit_uri: edit/main/docs/
 
 # nav:
 #   - Home: README.md
@@ -19,10 +20,12 @@ theme:
   logo: static/logo.png
   favicon: static/favicon.ico
 
-  # icon:
-  #   repo: fontawesome/brands/github
+  icon:
+    repo: fontawesome/brands/github
 
   features:
+    # - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.code.select
